@@ -1,0 +1,175 @@
+{
+  "metadata": {
+    "title": "Farkas Bence",
+    "description": "Farkas Bence portfóliója",
+    "about": {
+      "title": "Rólam"
+    },
+    "projects": {
+      "title": "Projektek"
+    },
+    "contact": {
+      "title": "Kapcsolat"
+    },
+    "cv": {
+      "title": "Önéletrajz"
+    }
+  },
+  "navbar": {
+    "menuItems": {
+      "home": "Kezdőlap",
+      "about": "Rólam",
+      "skills": "Képességek",
+      "projects": "Projektek",
+      "contact": "Kapcsolat"
+    },
+    "mobileMenu": {
+      "title": "Menü"
+    }
+  },
+  "home": {
+    "hero": {
+      "hello": "Szia! A nevem",
+      "firstName": "Bence",
+      "lastName": "Farkas",
+      "occupation": "Szoftver és webfejlesztő",
+      "description": "Jelenleg Programtervező informatikus MSc hallgató vagyok az ELTE-n."
+    },
+    "buttons": {
+      "viewCV": "Önéletrajz megtekintése"
+    }
+  },
+  "about": {
+    "title": "Rólam",
+    "bio": {
+      "p1": "Szia! Farkas Bence vagyok, szoftvermérnök és mesterképzéses hallgató az Eötvös Loránd Tudományegyetemen. Szenvedélyem a problémamegoldás és az olyan rendszerek építése, amelyek nemcsak működnek, hanem skálázhatók és fenntarthatók is.",
+      "p2": "Célom, hogy a tanulmányaim és saját fejlesztési projektjeim során megszerzett tudásomat és tapasztalataimat hatékonyan kamatoztassam a szakmai munkában. Kiemelten érdekel a webfejlesztés és a szoftverfejlesztés. Nyitott vagyok az új technológiák megismerésére, és elkötelezett vagyok a folyamatos szakmai fejlődés mellett."
+    },
+    "education": {
+      "title": "Tanulmányok",
+      "msc": {
+        "id": "school-elte-msc",
+        "school": "Eötvös Loránd Tudományegyetem (ELTE)",
+        "degree": "Programtervező Informatikus MSc",
+        "date": "2025 - Jelenleg",
+        "desc": "Szoftvertechnológia szakirány."
+      },
+      "bsc": {
+        "id": "school-elte-bsc",
+        "school": "Eötvös Loránd Tudományegyetem (ELTE)",
+        "degree": "Programtervező Informatikus BSc",
+        "date": "2022 - 2025",
+        "desc": "Stabil elméleti alapok, algoritmuselmélet, adatbázisok, webfejlesztés és objektumorientált tervezés."
+      },
+      "highScool": {
+        "id": "school-banki",
+        "school": "Bánki Donát Technikum",
+        "degree": "Érettségi",
+        "date": "2018 - 2022",
+        "desc": "Informatikai tagozat, emelt szintű programozás és számítástechnika."
+      }
+    },
+    "experiences": {
+      "title": "Szakmai tapasztalat",
+      "soloronIt": {
+        "id": "experience-soloron-it",
+        "position": "Szakmai gyakorlat",
+        "company": "Soloron IT Zrt.",
+        "date": "2025 Március - 2025 Május",
+        "desc": "Szoftvertesztelés"
+      }
+    },
+    "languages": {
+      "title": "Nyelvek",
+      "hungarian": {
+        "name": "Magyar",
+        "level": "Anyanyelv"
+      },
+      "english": {
+        "name": "Angol",
+        "level": "C1"
+      },
+      "german": {
+        "name": "Német",
+        "level": "Alap szint"
+      }
+    },
+    "skills": {
+      "title": "Tech Stack & Eszközök",
+      "frontend": "Frontend",
+      "backend": "Backend & Adatbázis",
+      "tools": "Eszközök & DevOps"
+    },
+    "hobbies": {
+      "title": "Hobbik és Érdeklődés",
+      "items": {
+        "waterpolo": "Vízilabda",
+        "sports": "Sport",
+        "outdoors": "Természetjárás",
+        "cooking": "Főzés",
+        "reading": "Olvasás"
+      }
+    }
+  },
+  "projects": {
+    "title": "Projektek",
+    "buttons": {
+      "code": "Forráskód"
+    },
+    "items": {
+      "elsWorkoutApp": {
+        "title": "ELS - EatLiftSleep Edzésnapló Alkalmazás",
+        "description": "Az ELS (EatLiftSleep) egy full-stack webalkalmazás, amely lehetővé teszi az edzés, étkezés, testsúly és alvás strukturált naplózását, valamint az adatok hosszabb távú nyomon követését."
+      },
+      "salaryCalculator": {
+        "title": "Bérkalkulátor Alkamazás",
+        "description": "Az alkalmazás célja egy komplex bérkalkulátor megvalósítása React környezetben, amely képes kezelni a különböző magyar adókedvezményeket, és több családtag bérének együttes kezelését."
+      },
+      "potatoMapGame": {
+        "title": "Térképész - Burgonya Térkép",
+        "description": "Ez a projekt a népszerű \"Kartográfusok\" (Cartographers) társasjáték logikájára épülő, böngészőben futtatható stratégiai játék implementációja. A játékos feladata egy birodalom feltérképezése különböző terepelemek lehelyezésével, miközben változó küldetéseket kell teljesítenie négy évszakon keresztül."
+      },
+      "pokemonCardTrader": {
+        "title": "Pokémon Kártya Cserélő Applikáció",
+        "description": "Az alkalmazás egy online piactér, ahol a felhasználók regisztráció után Pokémon kártyákat adhatnak el és vásárolhatnak meg, adminisztrátori felügyelet mellett."
+      }
+    }
+  },
+  "contact": {
+    "subTitle": "Beszéljünk!",
+    "text": "Jelenleg nyitott vagyok új lehetőségekre és projektekre. Ha van egy ötleted, vagy csak szakmai témában beszélgetnél, írj bátran!",
+    "info": {
+      "linkedin": "Csatlakozzunk",
+      "github": "Kódbázis"
+    },
+    "form": {
+      "name": "Név",
+      "email": "Email",
+      "subject": "Tárgy",
+      "message": "Üzenet",
+      "messagePlaceholder": "Az üzeneted...",
+      "send": "Üzenet küldése",
+      "sending": "Küldés...",
+      "success": "Az üzeneted sikeresen elküldve!"
+    }
+  },
+  "footer": {
+    "author": "Farkas Bence.",
+    "allRightsReserved": "Minden jog fenntartva."
+  },
+  "errors": {
+    "error": {
+      "title": "Valami hiba történt!",
+      "button": "Próbáld újra"
+    },
+    "notFound": {
+      "title": "Az oldal nem található",
+      "message": "Hoppá, úgy tűnik eltévedtél a digitális űrben.",
+      "button": "Vissza a főoldalra"
+    }
+  },
+  "common": {
+    "loading": "Betöltés...",
+    "pleaseWait": "Kérjük várjon, amíg előkészítjük az adatokat."
+  }
+}

@@ -1,0 +1,175 @@
+{
+  "metadata": {
+    "title": "Bence Farkas",
+    "description": "Portfolio of Bence Farkas",
+    "about": {
+      "title": "About Me"
+    },
+    "projects": {
+      "title": "Projects"
+    },
+    "contact": {
+      "title": "Contact"
+    },
+    "cv": {
+      "title": "Resume"
+    }
+  },
+  "navbar": {
+    "menuItems": {
+      "home": "Home",
+      "about": "About",
+      "skills": "Skills",
+      "projects": "Projects",
+      "contact": "Contact"
+    },
+    "mobileMenu": {
+      "title": "Menu"
+    }
+  },
+  "home": {
+    "hero": {
+      "hello": "Hello! I'm",
+      "firstName": "Bence",
+      "lastName": "Farkas",
+      "occupation": "Software Engineer & Web Developer",
+      "description": "I am a Computer Science MSc Student at ELTE."
+    },
+    "buttons": {
+      "viewCV": "View Resume"
+    }
+  },
+  "about": {
+    "title": "About Me",
+    "bio": {
+      "p1": "Hi! I'm Farkas Bence, a software engineer and MSc student at Eötvös Loránd University (ELTE). I am passionate about problem-solving and building systems that not only work but are scalable and maintainable.",
+      "p2": "My goal is to apply the knowledge and experience I have gained through my studies and personal projects effectively in a professional environment. I am particularly interested in web development and software engineering. I am open to learning new technologies and committed to continuous professional growth."
+    },
+    "education": {
+      "title": "Education",
+      "msc": {
+        "id": "school-elte-msc",
+        "school": "Eötvös Loránd University (ELTE)",
+        "degree": "Computer Science MSc",
+        "date": "2025 - Present",
+        "desc": "Software Technology specialization."
+      },
+      "bsc": {
+        "id": "school-elte-bsc",
+        "school": "Eötvös Loránd University (ELTE)",
+        "degree": "Computer Science BSc",
+        "date": "2022 - 2025",
+        "desc": "Strong theoretical foundations, "
+      },
+      "highScool": {
+        "id": "school-banki",
+        "school": "Bánki Donát Technikum",
+        "degree": "High School Diploma",
+        "date": "2018 - 2022",
+        "desc": "IT specialization, advanced programming and computer science."
+      }
+    },
+    "experiences": {
+      "title": "Professional Experience",
+      "soloronIt": {
+        "id": "experience-soloron-it",
+        "position": "Internship",
+        "company": "Soloron IT Zrt.",
+        "date": "March 2025 - May 2025",
+        "desc": "Software Testing"
+      }
+    },
+    "languages": {
+      "title": "Languages",
+      "hungarian": {
+        "name": "Hungarian",
+        "level": "Native"
+      },
+      "english": {
+        "name": "English",
+        "level": "C1"
+      },
+      "german": {
+        "name": "German",
+        "level": "Basic"
+      }
+    },
+    "skills": {
+      "title": "Tech Stack & Tools",
+      "frontend": "Frontend",
+      "backend": "Backend & Database",
+      "tools": "Tools & DevOps"
+    },
+    "hobbies": {
+      "title": "Hobbies & Interests",
+      "items": {
+        "waterpolo": "Waterpolo",
+        "sports": "Sports",
+        "outdoors": "Outdoors",
+        "cooking": "Cooking",
+        "reading": "Reading"
+      }
+    }
+  },
+  "projects": {
+    "title": "Projects",
+    "buttons": {
+      "code": "Source Code"
+    },
+    "items": {
+      "elsWorkoutApp": {
+        "title": "ELS - EatLiftSleep Workout Logger App",
+        "description": "ELS (EatLiftSleep) is a full-stack web application designed to track workouts, nutrition, body weight, and sleep in a structured and consistent way, enabling long-term progress monitoring."
+      },
+      "salaryCalculator": {
+        "title": "Salary Calculator App",
+        "description": "The goal of the application is to implement a comprehensive salary calculator in a React environment, capable of handling various Hungarian tax benefits and managing the combined income of multiple family members."
+      },
+      "potatoMapGame": {
+        "title": "Cartographer - Potato Map",
+        "description": "A browser-based strategy game inspired by the board game Cartographers. The goal is to map out a kingdom by placing terrain shapes while completing changing missions across four seasons."
+      },
+      "pokemonCardTrader": {
+        "title": "Pokémon Card Trader App",
+        "description": "Users can manage their collections, trade cards, and administrators can manage the global card database."
+      }
+    }
+  },
+  "contact": {
+    "subTitle": "Let's talk tech!",
+    "text": "I am currently open to new opportunities and projects. If you have an idea or just want to chat on a professional topic, feel free to write!",
+    "info": {
+      "linkedin": "Let's Connect",
+      "github": "Code Repository"
+    },
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "Message",
+      "messagePlaceholder": "Your message here...",
+      "send": "Send Message",
+      "sending": "Sending...",
+      "success": "Your message has been sent successfully!"
+    }
+  },
+  "footer": {
+    "author": "Farkas Bence.",
+    "allRightsReserved": "All Rights Reserved."
+  },
+  "errors": {
+    "error": {
+      "title": "Something went wrong!",
+      "button": "Try again"
+    },
+    "notFound": {
+      "title": "Page not found",
+      "message": "Oops, it looks like you're lost in digital space",
+      "button": "Go Back"
+    }
+  },
+  "common": {
+    "loading": "Loading...",
+    "pleaseWait": "Please wait while we prepare the data."
+  }
+}
