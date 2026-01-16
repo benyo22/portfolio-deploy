@@ -1,5 +1,6 @@
 import { getTranslations } from 'next-intl/server';
 
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import { Toaster } from 'sonner';
 
 import { Providers } from '@/src/components/providers/providers';
@@ -57,6 +58,7 @@ export default async function RootLayout({
       data-scroll-behavior="smooth"
     >
       <body className="bg-background">
+        <SpeedInsights />
         <Toaster />
         <Providers>{children}</Providers>
       </body>
