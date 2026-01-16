@@ -29,7 +29,7 @@
   },
   "home": {
     "hero": {
-      "hello": "Szia! A nevem",
+      "hello": "",
       "firstName": "Bence",
       "lastName": "Farkas",
       "occupation": "Szoftver és webfejlesztő",
@@ -42,7 +42,7 @@
   "about": {
     "title": "Rólam",
     "bio": {
-      "p1": "Szia! Farkas Bence vagyok, szoftvermérnök és mesterképzéses hallgató az Eötvös Loránd Tudományegyetemen. Szenvedélyem a problémamegoldás és az olyan rendszerek építése, amelyek nemcsak működnek, hanem skálázhatók és fenntarthatók is.",
+      "p1": "Farkas Bence vagyok, szoftvermérnök és mesterképzéses hallgató az Eötvös Loránd Tudományegyetemen. Szenvedélyem a problémamegoldás és az olyan rendszerek építése, amelyek nemcsak működnek, hanem skálázhatók és fenntarthatók is.",
       "p2": "Célom, hogy a tanulmányaim és saját fejlesztési projektjeim során megszerzett tudásomat és tapasztalataimat hatékonyan kamatoztassam a szakmai munkában. Kiemelten érdekel a webfejlesztés és a szoftverfejlesztés. Nyitott vagyok az új technológiák megismerésére, és elkötelezett vagyok a folyamatos szakmai fejlődés mellett."
     },
     "education": {
