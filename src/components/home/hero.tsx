@@ -1,12 +1,14 @@
 'use client';
 
+import { memo } from 'react';
+
 import { useLocale, useTranslations } from 'next-intl';
 
 import { FadeIn } from '../ui/fade-in';
 import { Connections } from './connections';
 import { ViewCVButton } from './view-cv-button';
 
-export function Hero() {
+export const Hero = memo(function Hero() {
   const t = useTranslations('home.hero');
   const locale = useLocale();
 
@@ -49,4 +51,4 @@ export function Hero() {
       </div>
     </div>
   );
-}
+});

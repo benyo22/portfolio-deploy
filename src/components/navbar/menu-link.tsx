@@ -1,10 +1,10 @@
-import { Dispatch, SetStateAction } from 'react';
+import { Dispatch, SetStateAction, memo } from 'react';
 
 import { Link } from '@/src/i18n/routing';
 import { NavigationMenuItem } from '@/src/lib/types';
 import { cn } from '@/src/lib/utils';
 
-export function MenuLink({
+export const MenuLink = memo(function MenuLink({
   navigationMenuItem,
   activeSection,
   setMobileMenuOpen,
@@ -56,4 +56,4 @@ export function MenuLink({
       </span>
     </Link>
   );
-}
+});
