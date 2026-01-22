@@ -19,7 +19,7 @@ export const FADE_IN_STAGGER = 90;
 
 const developer: DeveloperType = {
   name: 'Farkas Bence',
-  skills: ['React', 'TypeScript', 'Java', 'Git'],
+  skills: ['React', 'TypeScript', 'Node.js', 'Java', 'Git'],
   focuses: ['Software Development', 'Web Development'],
   sports: 'Everyday',
   learning: 'Always',
