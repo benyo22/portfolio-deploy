@@ -1,9 +1,22 @@
+'use client';
+
 import { useTranslations } from 'next-intl';
+import dynamic from 'next/dynamic';
 
 import { GlowingLine } from '../ui/glowing-line';
 import { GridBackground } from '../ui/grid-background';
 import { PageTitle } from '../ui/page-title';
-import { ProjectCardList } from './project-card-list';
+
+// Lazy load project list
+const ProjectCardList = dynamic(
+  () =>
+    import('./project-card-list').then((mod) => ({
+      default: mod.ProjectCardList,
+    })),
+  {
+    loading: () => null,
+  }
+);
 
 export function Projects() {
   const t = useTranslations('projects');

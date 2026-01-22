@@ -1,15 +1,45 @@
+'use client';
+
 import { useTranslations } from 'next-intl';
+import dynamic from 'next/dynamic';
 
 import { GlowingLine } from '@/src/components/ui/glowing-line';
 
 import { PageTitle } from '../ui/page-title';
 import { Bio } from './bio';
-import { Education } from './education';
-import { Experience } from './experience';
-import { Hobbies } from './hobbies';
-import { Languages } from './languages';
 import { Photo } from './photo';
-import { Skills } from './skills';
+
+// Lazy load non-critical sections
+const Education = dynamic(
+  () => import('./education').then((mod) => ({ default: mod.Education })),
+  {
+    loading: () => null,
+  }
+);
+const Experience = dynamic(
+  () => import('./experience').then((mod) => ({ default: mod.Experience })),
+  {
+    loading: () => null,
+  }
+);
+const Languages = dynamic(
+  () => import('./languages').then((mod) => ({ default: mod.Languages })),
+  {
+    loading: () => null,
+  }
+);
+const Skills = dynamic(
+  () => import('./skills').then((mod) => ({ default: mod.Skills })),
+  {
+    loading: () => null,
+  }
+);
+const Hobbies = dynamic(
+  () => import('./hobbies').then((mod) => ({ default: mod.Hobbies })),
+  {
+    loading: () => null,
+  }
+);
 
 export function About() {
   const t = useTranslations('about');
