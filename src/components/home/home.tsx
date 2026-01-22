@@ -7,7 +7,10 @@ import { VirtualMacbookWindow } from './virtual-macbook-window';
 export function Home() {
   return (
     <>
-      <section className="grid min-h-screen w-full grid-cols-1 gap-64 px-4 pt-32 pb-16 lg:grid-cols-2 xl:px-16 xl:pb-32">
+      <section
+        className="grid min-h-screen w-full grid-cols-1 gap-64 px-4 pt-32 pb-16 lg:grid-cols-2 xl:px-16 xl:pb-32"
+        aria-label="Hero section"
+      >
         <GridBackground />
         <Spotlight colorClass="bg-primary/10" position="left" offset={0} />
 

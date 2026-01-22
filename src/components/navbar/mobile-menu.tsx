@@ -30,10 +30,10 @@ export function MobileMenu({
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="md:hidden">
+    <nav className="md:hidden" aria-label={t('ariaLabel')}>
       <Sheet open={open} onOpenChange={setOpen}>
         <SheetTrigger asChild>
-          <Button variant="ghost" size="icon">
+          <Button variant="ghost" size="icon" aria-label={t('ariaLabelOpen')}>
             <Menu className="h-[1.2rem] w-[1.2rem]" />
           </Button>
         </SheetTrigger>
@@ -55,6 +55,6 @@ export function MobileMenu({
           </div>
         </SheetContent>
       </Sheet>
-    </div>
+    </nav>
   );
 }

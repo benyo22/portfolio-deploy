@@ -10,6 +10,11 @@ import { ContactInfoCard } from './contact-info-card';
 export function ContactInfo() {
   const t = useTranslations('contact');
 
+  const ariaLabels: Record<string, string> = {
+    linkedin: t('info.linkedinAriaLabel'),
+    github: t('info.githubAriaLabel'),
+  };
+
   return (
     <FadeIn direction="left" delay={FADE_IN_BASE_DELAY}>
       <div className="flex w-full justify-center lg:justify-end">
@@ -28,6 +33,7 @@ export function ContactInfo() {
                 href={connection.href}
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label={ariaLabels[connection.kind]}
                 className="group"
               >
                 <ContactInfoCard connection={connection} />

@@ -10,7 +10,10 @@ export function Projects() {
 
   return (
     <>
-      <section className="relative flex min-h-screen w-full flex-col items-center gap-16 px-4 pt-32 pb-16 xl:px-16 xl:pb-32">
+      <section
+        className="relative flex min-h-screen w-full flex-col items-center gap-16 px-4 pt-32 pb-16 xl:px-16 xl:pb-32"
+        aria-labelledby="projects-title"
+      >
         <GridBackground />
 
         <PageTitle title={t('title')} />

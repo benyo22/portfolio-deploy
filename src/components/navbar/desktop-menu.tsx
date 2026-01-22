@@ -13,7 +13,7 @@ export function DesktopMenu({
   const activeSection = usePathname();
 
   return (
-    <div className="hidden md:flex">
+    <nav className="hidden md:flex" aria-label="Main navigation">
       <div className="flex gap-8">
         {navigationMenuItems.map((item) => (
           <MenuLink
@@ -23,6 +23,6 @@ export function DesktopMenu({
           />
         ))}
       </div>
-    </div>
+    </nav>
   );
 }

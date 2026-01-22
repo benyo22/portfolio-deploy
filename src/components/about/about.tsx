@@ -16,7 +16,10 @@ export function About() {
 
   return (
     <>
-      <section className="flex min-h-screen w-full flex-col items-center gap-16 px-4 pt-32 pb-16 xl:px-16 xl:pb-32">
+      <section
+        className="flex min-h-screen w-full flex-col items-center gap-16 px-4 pt-32 pb-16 xl:px-16 xl:pb-32"
+        aria-labelledby="about-title"
+      >
         <PageTitle title={t('title')} />
 
         <div className="flex flex-col items-center justify-center gap-8 lg:flex-row lg:gap-32">

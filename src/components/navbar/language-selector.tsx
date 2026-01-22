@@ -2,7 +2,7 @@
 
 import { memo, useCallback } from 'react';
 
-import { useLocale } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import { useSearchParams } from 'next/navigation';
 
 import { AppLocale, usePathname, useRouter } from '@/src/i18n/routing';
@@ -14,6 +14,7 @@ export default memo(function LanguageSelector() {
   const pathname = usePathname();
   const params = useSearchParams();
   const locale = useLocale();
+  const t = useTranslations('navbar.languageSelector');
 
   const toggleLocale = useCallback(() => {
     const nextLocale: AppLocale = locale === 'en' ? 'hu' : 'en';
@@ -36,12 +37,13 @@ export default memo(function LanguageSelector() {
     <Button
       variant="ghost"
       size="icon"
-      aria-label="languageSelector"
+      aria-label={t('ariaLabel', {
+        language: locale === 'en' ? 'English' : 'Magyar',
+      })}
       onClick={toggleLocale}
       title={locale === 'en' ? 'Váltás magyarra' : 'Switch to English'}
     >
-      {locale === 'en' ? usIcon : huIcon}
-      <span className="sr-only">Toggle language</span>
+      {locale === 'hu' ? usIcon : huIcon}
     </Button>
   );
 });

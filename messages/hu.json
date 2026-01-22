@@ -1,15 +1,18 @@
 {
   "metadata": {
     "title": "Farkas Bence",
-    "description": "Farkas Bence portfóliója",
+    "description": "Farkas Bence portfóliója - Szoftver és webfejlesztő. Programtervező informatikus MSc hallgató az ELTE-n, full-stack fejlesztésre specializálódva React, Next.js és TypeScript technológiákkal.",
     "about": {
-      "title": "Rólam"
+      "title": "Rólam",
+      "description": "Tudj meg többet Farkas Bencéről - Tanulmányok, szakmai tapasztalat, képességek és nyelvtudás. Programtervező informatikus MSc hallgató az ELTE-n, szoftvermérnöki szakértelemmel."
     },
     "projects": {
-      "title": "Projektek"
+      "title": "Projektek",
+      "description": "Fedezd fel Farkas Bence projektportfólióját - Full-stack webalkalmazások modern technológiákkal, mint React, Next.js, Node.js és még sok más."
     },
     "contact": {
-      "title": "Kapcsolat"
+      "title": "Kapcsolat",
+      "description": "Vedd fel a kapcsolatot Farkas Bencével - Szoftver és webfejlesztő. Elérhető együttműködésre és álláslehetőségekre."
     },
     "cv": {
       "title": "Önéletrajz"
@@ -24,7 +27,15 @@
       "contact": "Kapcsolat"
     },
     "mobileMenu": {
-      "title": "Menü"
+      "title": "Menü",
+      "ariaLabel": "Mobil menü",
+      "ariaLabelOpen": "Navigációs menü megnyitása"
+    },
+    "themeToggle": {
+      "ariaLabel": "Téma váltó"
+    },
+    "languageSelector": {
+      "ariaLabel": "Váltás erre: {language}"
     }
   },
   "home": {
@@ -139,7 +150,9 @@
     "text": "Jelenleg nyitott vagyok új lehetőségekre és projektekre. Ha van egy ötleted, vagy csak szakmai témában beszélgetnél, írj bátran!",
     "info": {
       "linkedin": "Csatlakozzunk",
-      "github": "Kódbázis"
+      "github": "Kódbázis",
+      "linkedinAriaLabel": "Látogasd meg LinkedIn profilomat",
+      "githubAriaLabel": "Látogasd meg GitHub profilomat"
     },
     "form": {
       "name": "Név",

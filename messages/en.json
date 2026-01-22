@@ -1,15 +1,18 @@
 {
   "metadata": {
     "title": "Bence Farkas",
-    "description": "Portfolio of Bence Farkas",
+    "description": "Portfolio of Bence Farkas - Software Engineer and Web Developer. MSc Computer Science student at ELTE specializing in full-stack development with React, Next.js, and TypeScript.",
     "about": {
-      "title": "About Me"
+      "title": "About Me",
+      "description": "Learn more about Bence Farkas - Education, professional experience, skills, and languages. MSc Computer Science student at ELTE with expertise in software engineering."
     },
     "projects": {
-      "title": "Projects"
+      "title": "Projects",
+      "description": "Explore the portfolio of projects by Bence Farkas - Full-stack web applications built with modern technologies like React, Next.js, Node.js, and more."
     },
     "contact": {
-      "title": "Contact"
+      "title": "Contact",
+      "description": "Get in touch with Bence Farkas - Software Engineer and Web Developer. Available for collaboration and job opportunities."
     },
     "cv": {
       "title": "Resume"
@@ -24,7 +27,15 @@
       "contact": "Contact"
     },
     "mobileMenu": {
-      "title": "Menu"
+      "title": "Menu",
+      "ariaLabel": "Mobile Menu",
+      "ariaLabelOpen": "Open navigation menu"
+    },
+    "themeToggle": {
+      "ariaLabel": "Theme Toggle"
+    },
+    "languageSelector": {
+      "ariaLabel": "Switch to {language}"
     }
   },
   "home": {
@@ -139,7 +150,9 @@
     "text": "I am currently open to new opportunities and projects. If you have an idea or just want to chat on a professional topic, feel free to write!",
     "info": {
       "linkedin": "Let's Connect",
-      "github": "Code Repository"
+      "github": "Code Repository",
+      "linkedinAriaLabel": "Visit my LinkedIn profile",
+      "githubAriaLabel": "Visit my GitHub profile"
     },
     "form": {
       "name": "Name",

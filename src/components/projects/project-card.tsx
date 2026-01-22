@@ -46,8 +46,13 @@ export function ProjectCard({ project }: { project: ProjectType }) {
           className="from-primary to-chart-2 shadow-chart-2/20 hover:shadow-chart-2/40 relative w-full gap-2 overflow-hidden bg-linear-to-r text-white shadow-md transition-all duration-500 select-none hover:shadow-xl/50"
           asChild
         >
-          <a href={project.repoUrl} target="_blank" rel="noopener noreferrer">
-            <FaGithub className="size-4" />
+          <a
+            href={project.repoUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={`View source code for ${t(`items.${project.id}.title`)}`}
+          >
+            <FaGithub className="size-4" aria-hidden="true" />
             {t('buttons.code')}
           </a>
         </Button>

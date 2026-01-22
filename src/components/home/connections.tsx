@@ -20,6 +20,11 @@ export function Connections() {
     },
   };
 
+  const ariaLabels = {
+    linkedin: 'Visit LinkedIn profile',
+    github: 'Visit GitHub profile',
+  };
+
   return (
     <div className="flex justify-center gap-2 lg:justify-start">
       {connections.map((connection) => (
@@ -27,12 +32,14 @@ export function Connections() {
           <a
             href={connection.href}
             target="_blank"
+            rel="noopener noreferrer"
+            aria-label={ariaLabels[connection.kind]}
             className={cn(
               'text-muted-foreground transform transition-all duration-500 hover:scale-110',
               brandStyles[connection.kind].hover
             )}
           >
-            {iconMap[connection.kind]}
+            <span aria-hidden="true">{iconMap[connection.kind]}</span>
           </a>
         </Button>
       ))}

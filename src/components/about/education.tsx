@@ -41,10 +41,10 @@ export function Education() {
     <div className="grid min-w-full grid-cols-1 gap-4 sm:min-w-xl lg:min-w-2xl">
       <FadeIn direction="bottom" delay={0}>
         <div className="mb-8 flex w-full items-center justify-center">
-          <h3 className="text-muted-foreground hover:text-foreground flex w-fit items-center gap-2 text-3xl select-none">
-            <GraduationCap className="text-primary size-8" />
+          <h2 className="text-muted-foreground hover:text-foreground flex w-fit items-center gap-2 text-3xl select-none">
+            <GraduationCap className="text-primary size-8" aria-hidden="true" />
             {t('education.title')}
-          </h3>
+          </h2>
         </div>
       </FadeIn>
 
@@ -61,12 +61,13 @@ export function Education() {
                   'hidden min-w-1 rounded-full sm:absolute sm:top-0 sm:left-2 sm:block sm:h-full sm:w-1',
                   education.isActive ? 'bg-primary' : 'bg-muted'
                 )}
+                aria-hidden="true"
               />
               <div>
                 <div className="flex flex-col items-start sm:flex-row sm:justify-between">
-                  <h4 className="text-foreground text-lg font-bold">
+                  <h3 className="text-foreground text-lg font-bold">
                     {education.degree}
-                  </h4>
+                  </h3>
                   <span
                     className={cn(
                       'w-fit rounded-full px-2 py-0.5 text-sm font-medium select-none',

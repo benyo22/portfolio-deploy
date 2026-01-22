@@ -17,7 +17,7 @@ export function ViewCVButton() {
       >
         <Link href={'/about'}>
           {t('viewCV')}
-          <ArrowRightCircle className="size-5" />
+          <ArrowRightCircle className="size-5" aria-hidden="true" />
         </Link>
       </Button>
     </div>
