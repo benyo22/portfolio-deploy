@@ -14,12 +14,6 @@ export function Hero() {
     <div className="flex items-center justify-center text-center lg:justify-end lg:text-left">
       <div className="z-10 flex flex-col gap-8">
         <div className="flex flex-col gap-2">
-          <FadeIn direction="left" delay={0}>
-            <span className="text-chart-1 text-2xl font-semibold">
-              {t('hello')}
-            </span>
-          </FadeIn>
-
           <FadeIn direction="bottom" delay={100}>
             <h1 className="text-foreground text-5xl font-bold lg:text-7xl">
               {locale === 'hu' ? (

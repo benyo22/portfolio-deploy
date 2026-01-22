@@ -29,7 +29,6 @@
   },
   "home": {
     "hero": {
-      "hello": "Hello! I'm",
       "firstName": "Bence",
       "lastName": "Farkas",
       "occupation": "Software Engineer & Web Developer",
