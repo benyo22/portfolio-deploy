@@ -1,3 +1,5 @@
+import { memo } from 'react';
+
 import { useFadeIn } from '@/src/hooks/use-fade-in';
 
 type Direction = 'top' | 'bottom' | 'left' | 'right';
@@ -8,7 +10,11 @@ type FadeInProps = {
   delay?: number; // ms
 };
 
-export function FadeIn({ children, direction = 'bottom', delay }: FadeInProps) {
+export const FadeIn = memo(function FadeIn({
+  children,
+  direction = 'bottom',
+  delay,
+}: FadeInProps) {
   const { ref, visible } = useFadeIn<HTMLDivElement>();
 
   const dirClass = {
@@ -27,4 +33,4 @@ export function FadeIn({ children, direction = 'bottom', delay }: FadeInProps) {
       {children}
     </div>
   );
-}
+});

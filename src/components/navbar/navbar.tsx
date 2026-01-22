@@ -1,3 +1,5 @@
+import { memo, useMemo } from 'react';
+
 import { useTranslations } from 'next-intl';
 
 import { Fingerprint, House, Layers, Mail } from 'lucide-react';
@@ -33,14 +35,18 @@ export const NAVIGATION = [
   },
 ] as const;
 
-export function NavBar() {
+export const NavBar = memo(function NavBar() {
   const t = useTranslations('navbar.menuItems');
 
-  const navigationMenuItems: NavigationMenu = NAVIGATION.map((item) => ({
-    label: t(item.key),
-    href: item.href,
-    icon: item.icon,
-  }));
+  const navigationMenuItems: NavigationMenu = useMemo(
+    () =>
+      NAVIGATION.map((item) => ({
+        label: t(item.key),
+        href: item.href,
+        icon: item.icon,
+      })),
+    [t]
+  );
 
   return (
     <>
@@ -54,4 +60,4 @@ export function NavBar() {
       </div>
     </>
   );
-}
+});

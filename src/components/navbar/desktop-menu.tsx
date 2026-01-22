@@ -1,11 +1,13 @@
 'use client';
 
+import { memo } from 'react';
+
 import { usePathname } from '@/src/i18n/routing';
 import { NavigationMenu } from '@/src/lib/types';
 
 import { MenuLink } from './menu-link';
 
-export function DesktopMenu({
+export const DesktopMenu = memo(function DesktopMenu({
   navigationMenuItems,
 }: {
   navigationMenuItems: NavigationMenu;
@@ -25,4 +27,4 @@ export function DesktopMenu({
       </div>
     </nav>
   );
-}
+});

@@ -1,8 +1,10 @@
 'use client';
 
+import { memo } from 'react';
+
 import { motion } from 'framer-motion';
 
-export function GlowingLine() {
+export const GlowingLine = memo(function GlowingLine() {
   return (
     <div className="flex items-end justify-center">
       <motion.div
@@ -30,4 +32,4 @@ export function GlowingLine() {
       </motion.div>
     </div>
   );
-}
+});

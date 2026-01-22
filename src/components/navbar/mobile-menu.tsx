@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { memo, useState } from 'react';
 
 import { useTranslations } from 'next-intl';
 
@@ -19,7 +19,7 @@ import {
 } from '../ui/sheet';
 import { MenuLink } from './menu-link';
 
-export function MobileMenu({
+export const MobileMenu = memo(function MobileMenu({
   navigationMenuItems,
 }: {
   navigationMenuItems: NavigationMenu;
@@ -57,4 +57,4 @@ export function MobileMenu({
       </Sheet>
     </nav>
   );
-}
+});

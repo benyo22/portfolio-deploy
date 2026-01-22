@@ -1,5 +1,7 @@
 'use client';
 
+import { memo } from 'react';
+
 import { FADE_IN_BASE_DELAY, FADE_IN_STAGGER, codeLines } from '@/src/lib/data';
 
 import { FadeIn } from '../ui/fade-in';
@@ -48,7 +50,7 @@ const Value = ({ children }: { children: React.ReactNode }) => (
   <span className="text-green-600 dark:text-green-400">{children}</span>
 );
 
-export function VirtualMacbookWindow() {
+export const VirtualMacbookWindow = memo(function VirtualMacbookWindow() {
   return (
     <div className="hidden lg:z-10 lg:flex lg:items-center lg:justify-start">
       <FadeIn direction="right" delay={0}>
@@ -108,4 +110,4 @@ export function VirtualMacbookWindow() {
       </FadeIn>
     </div>
   );
-}
+});

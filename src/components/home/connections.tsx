@@ -1,3 +1,4 @@
+import { memo, useMemo } from 'react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 import { connections } from '@/src/lib/data';
@@ -10,21 +11,21 @@ export const iconMap = {
   github: <FaGithub className="size-5" />,
 };
 
-export function Connections() {
-  const brandStyles = {
-    linkedin: {
-      hover: 'hover:text-blue-600',
-    },
-    github: {
-      hover: 'hover:text-foreground',
-    },
-  };
+const brandStyles = {
+  linkedin: {
+    hover: 'hover:text-blue-600',
+  },
+  github: {
+    hover: 'hover:text-foreground',
+  },
+};
 
-  const ariaLabels = {
-    linkedin: 'Visit LinkedIn profile',
-    github: 'Visit GitHub profile',
-  };
+const ariaLabels = {
+  linkedin: 'Visit LinkedIn profile',
+  github: 'Visit GitHub profile',
+};
 
+export const Connections = memo(function Connections() {
   return (
     <div className="flex justify-center gap-2 lg:justify-start">
       {connections.map((connection) => (
@@ -45,4 +46,4 @@ export function Connections() {
       ))}
     </div>
   );
-}
+});
