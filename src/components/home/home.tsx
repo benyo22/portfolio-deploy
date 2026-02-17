@@ -1,8 +1,15 @@
+import { Suspense, lazy } from 'react';
+
 import { GlowingLine } from '../ui/glowing-line';
 import { GridBackground } from '../ui/grid-background';
 import { Spotlight } from '../ui/spotlight';
 import { Hero } from './hero';
-import { VirtualMacbookWindow } from './virtual-macbook-window';
+
+const VirtualMacbookWindow = lazy(() =>
+  import('./virtual-macbook-window').then((mod) => ({
+    default: mod.VirtualMacbookWindow,
+  }))
+);
 
 export function Home() {
   return (
@@ -15,7 +22,9 @@ export function Home() {
         <Spotlight colorClass="bg-primary/10" position="left" offset={0} />
 
         <Hero />
-        <VirtualMacbookWindow />
+        <Suspense fallback={null}>
+          <VirtualMacbookWindow />
+        </Suspense>
       </section>
 
       <GlowingLine />

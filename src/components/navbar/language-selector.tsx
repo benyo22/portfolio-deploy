@@ -5,6 +5,8 @@ import { memo, useCallback } from 'react';
 import { useLocale, useTranslations } from 'next-intl';
 import { useSearchParams } from 'next/navigation';
 
+import 'flag-icons/css/flag-icons.min.css';
+
 import { AppLocale, usePathname, useRouter } from '@/src/i18n/routing';
 
 import { Button } from '../ui/button';

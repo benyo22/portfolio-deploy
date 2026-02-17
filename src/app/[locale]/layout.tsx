@@ -1,10 +1,6 @@
 import { getTranslations } from 'next-intl/server';
 import { Inter } from 'next/font/google';
-
-import { Analytics } from '@vercel/analytics/next';
-import { SpeedInsights } from '@vercel/speed-insights/next';
-import 'flag-icons/css/flag-icons.min.css';
-import { Toaster } from 'sonner';
+import Script from 'next/script';
 
 import { Providers } from '@/src/components/providers/providers';
 
@@ -145,13 +141,27 @@ export default async function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
+        {/* Preload critical fonts for faster FCP */}
+        <link
+          rel="preconnect"
+          href="https://fonts.googleapis.com"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
       </head>
       <body className={`bg-background ${inter.className}`}>
-        <SpeedInsights />
-        <Analytics />
-
-        <Toaster />
         <Providers>{children}</Providers>
+
+        {/* Defer Vercel Analytics and SpeedInsights to not block rendering */}
+        <Script
+          src="https://cdn.vercel-insights.com/v1/script.js"
+          strategy="lazyOnload"
+        />
+        <Script src="/_vercel/insights/script.js" strategy="lazyOnload" />
       </body>
     </html>
   );

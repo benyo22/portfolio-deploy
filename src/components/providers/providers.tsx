@@ -1,7 +1,13 @@
-import { memo } from 'react';
+import { Suspense, lazy, memo } from 'react';
 
 import { NextIntlClientProvider } from 'next-intl';
 import { ThemeProvider } from 'next-themes';
+
+const LazySonnerToaster = lazy(() =>
+  import('sonner').then((mod) => ({
+    default: mod.Toaster,
+  }))
+);
 
 export const Providers = memo(function Providers({
   children,
@@ -16,6 +22,9 @@ export const Providers = memo(function Providers({
         enableSystem={false}
         disableTransitionOnChange
       >
+        <Suspense fallback={null}>
+          <LazySonnerToaster />
+        </Suspense>
         {children}
       </ThemeProvider>
     </NextIntlClientProvider>
