@@ -1,6 +1,7 @@
 import { getTranslations } from 'next-intl/server';
 import { Inter } from 'next/font/google';
 
+import { Analytics } from '@vercel/analytics/next';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import 'flag-icons/css/flag-icons.min.css';
 import { Toaster } from 'sonner';
@@ -147,6 +148,8 @@ export default async function RootLayout({
       </head>
       <body className={`bg-background ${inter.className}`}>
         <SpeedInsights />
+        <Analytics />
+
         <Toaster />
         <Providers>{children}</Providers>
       </body>
